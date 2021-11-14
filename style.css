@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    font-family: 'Roboto',sans-serif;
+    background-color: rgb(24, 23, 23);
+    color : rgb(255,255,255);
+    overflow: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-weight: 300;
+}
+#wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+#right{
+    flex : 1;
+  
+}
+#sign-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img {
+    width: 300px;
+    margin-bottom: 8vh;
+}
+form{
+    width: 80%;
+}
+form div{
+    display: flex;
+    flex-direction: column;
+}
+form label{
+    margin-bottom: 0.5rem;
+}
+form .text-input{
+   
+    background-color: inherit;
+    border: 1px solid rgb(124, 120, 120);
+    margin-bottom: 1rem;
+    padding: 0.7rem 0;
+    border-radius: 0.2rem;
+}
+form .btn-primary{
+    width: 100%;
+    padding: 0.7rem;
+    background-color: rgb(241, 132, 42);
+    border-radius: 0.2rem;
+    color: inherit;
+    border: 1px solid rgb(124, 120, 120);
+    font-size: 12px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+form .btn-primary:hover{
+    background-color: rgb(245,65, 42);
+}
+
+.links a{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.8rem;
+
+}
+.links a:hover{
+    text-decoration: underline;
+}
+#right .or{
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    margin-bottom: 1.5rem;
+}
+.or p{
+    margin: 0 0.8rem;
+
+}
+.or .bar{
+    width: 30%;
+    margin: 0;
+
+}
+
+.btn-secondary{
+    border : 1px solid rgb(255,255,255);
+    padding: 0.5rem 5rem;
+    text-decoration: none;
+    color: inherit;
+    padding: 0.7rem 2rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    transition: all 1s;
+}
+.btn-secondary:hover{
+    opacity: 0.5;
+}
+#main-footer a{
+    color: rgb(241, 132, 42);
+    text-decoration: none;
+}
+#main-footer a:hover{
+    text-decoration: underline;
+}
+
+#main-footer{
+    text-align: center;
+    margin-top: 8rem;
+}
+
+
+#left{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("https://image.ibb.co/cO9Lxq/login-bg.jpg");
+    background-size: cover;
+} 
+
+.showcase-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.showcase-content h1{
+    font-size: 3rem;
+}
+
+@media (max-width: 768px){
+    #left{
+        display: none;
+    }
+}
+@media (min-width: 1200px)
+{
+    #right{
+        flex: 4;
+    }
+    #left{
+        flex: 6;
+    }
+}
